@@ -17,6 +17,7 @@ read -p "Pilih~Nomor=#: " n;
 if [ $n = 01 ] || [ $n = 1 ];then
 clear
 mkdir webdav
+mv webdav $HOME
 cd webdav
 pkg install curl
 pkg install python2
